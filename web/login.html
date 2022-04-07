@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录页面</title>
+</head>
+<body>
+    <!--关于action的路径的问题：
+    action="/loginUser"是相对于tomcat的根目录开始的，也就是相对于webapps下的Root目录，该
+目录所对应的相当于是localhost:8080
+http://localhost:8080/javawebProgram_war_exploded/loginUser
+javawebProgram_war_exploded与工程名不一样，是idea自己加在后面的
+直接写action="loginUser"就是相对于当前工程的javaweb根目录开始的-
+所以如果一定要写带/开头的请求路径，就写action="/javawebProgram_war_exploded/loginUser" -->
+<form action="LoginUserCDB10" method="post">
+    用户名：<input type="text" name="userName"/>
+    密码：<input type="password" name="pwd"/>
+    <!--爱好：
+    抽烟<input type="checkbox" name="favor" value="1"/>
+    喝酒<input type="checkbox" name="favor" value="2"/>
+    打牌<input type="checkbox" name="favor" value="3"/>-->
+    <input type="submit" value="提交">
+</form>
+</body>
+</html>
